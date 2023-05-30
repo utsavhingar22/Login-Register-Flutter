@@ -1,6 +1,7 @@
-# utsav_project1
+# Login-Register Application
+A Flutter project which has feature of sign up as register and login option through their registered credentials.
 
-A new Flutter project.
+# screenshots
 
 ## Getting Started
 
