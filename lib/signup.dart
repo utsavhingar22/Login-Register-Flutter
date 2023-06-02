@@ -7,6 +7,23 @@ class MyRegister extends StatefulWidget {
   @override
   _MyRegisterState createState() => _MyRegisterState();
 }
+class AuthProvider with ChangeNotifier {
+  String? name;
+  String? email;
+  String? password;
+  String? dob;
+  
+
+  void setEmail(String value) {
+    email = value;
+    notifyListeners();
+  }
+
+  void setPassword(String value) {
+    password = value;
+    notifyListeners();
+  }
+}
 
 class _MyRegisterState extends State<MyRegister> {
   @override
