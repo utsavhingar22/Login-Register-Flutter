@@ -13,6 +13,10 @@ class AuthProvider with ChangeNotifier {
   String? password;
   String? dob;
   
+  void setName(String value) {
+    name=value;
+    notifyListeners();
+  }
 
   void setEmail(String value) {
     email = value;
@@ -23,6 +27,12 @@ class AuthProvider with ChangeNotifier {
     password = value;
     notifyListeners();
   }
+  
+  void setDOB(String value) {
+    dos=value;
+    notifyListeners();
+  }
+  
 }
 
 class _MyRegisterState extends State<MyRegister> {
