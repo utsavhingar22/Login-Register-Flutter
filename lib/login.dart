@@ -8,6 +8,21 @@ class MyLogin extends StatefulWidget {
   _MyLoginState createState() => _MyLoginState();
 }
 
+class AuthProvider with ChangeNotifier {
+  String? email;
+  String? password;
+
+  void setEmail(String value) {
+    email = value;
+    notifyListeners();
+  }
+
+  void setPassword(String value) {
+    password = value;
+    notifyListeners();
+  }
+}
+
 class _MyLoginState extends State<MyLogin> {
   @override
   Widget build(BuildContext context) {
